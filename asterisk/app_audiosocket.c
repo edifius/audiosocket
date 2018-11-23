@@ -373,10 +373,7 @@ static int audiosocket_run(struct ast_channel *chan, const uuid_t id, const int 
       }
 
 		struct ast_frame *f = ast_read(chan);
-      if(!f) {
-         ast_log(LOG_WARNING, "No frame received\n");
-         return 1;
-      }
+     
 
       f->delivery.tv_sec = 0;
       f->delivery.tv_usec = 0;
