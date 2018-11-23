@@ -378,7 +378,7 @@ static int audiosocket_run(struct ast_channel *chan, const uuid_t id, const int 
       f->delivery.tv_sec = 0;
       f->delivery.tv_usec = 0;
       if (f->frametype != AST_FRAME_VOICE) {
-         ast_verbose("Ignoring non-voice frame\n");
+         ast_verbose("Ignoring non-voice frame via edifius !!\n");
       } else {
 
          // Send audio frame to audiosocket
